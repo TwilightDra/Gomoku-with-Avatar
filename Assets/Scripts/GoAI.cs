@@ -567,7 +567,7 @@ public class GoAI
     {
         ArrayList localBestPoints = FindMaxModel(role, chessBoard);
         ArrayList counterBestPoints = FindMaxModel(role == 1 ? 2 : 1, chessBoard);
-        if (Mathf.Abs(((int[])localBestPoints[0])[2]) > Mathf.Abs(((int[])counterBestPoints[0])[2] / 5 ))
+        if (Mathf.Abs(((int[])localBestPoints[0])[2]) > Mathf.Abs(((int[])counterBestPoints[0])[2] / 5 man))
         {
             return (int[])localBestPoints[random.Next(localBestPoints.Count)];
         }
